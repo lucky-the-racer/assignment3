@@ -1,0 +1,18 @@
+## 3. Create an App Service Plan and Provision a Web App
+### Steps:
+1. **Create an App Service Plan:**
+    - Go to the Azure portal and click on "Create a resource."
+    - Search for "App Service Plan" and select it.
+    - Fill in the required fields (name, resource group, region, pricing tier).
+    - Click "Review + create," then "Create."
+
+2. **Provision a Web App:**
+    - Go to the Azure portal and click on "Create a resource."
+    - Search for "Web App" and select it.
+    - Fill in the required fields (name, publish, runtime stack, etc.).
+    - Choose the App Service Plan you created.
+    - Click "Review + create," then "Create."
+
+3. **Deploy a Simple Welcome Page:**
+    - Use the Azure portal's built-in editor to create a simple HTML file.
+    - Or, deploy your code using GitHub, FTP, or other deployment methods
