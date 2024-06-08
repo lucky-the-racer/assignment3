@@ -5,17 +5,20 @@
     - Search for "Container Instances" and select it.
     - Fill in the required fields (name, resource group, container image, etc.).
     - Click "Review + create," then "Create."
+OR az container create --resource-group MyResourceGroup --name mycontainer --image MyACR.azurecr.io/myapp:latest --cpu 1 --memory 1.5
 
 2. **Deploy a Simple Docker Application:**
     - Use a public Docker image or your image from ACR.
     - Specify the image and settings during the creation of the container instance.
+OR az container create --resource-group MyResourceGroup --name mydockerapp --image mydockerapp:latest --cpu 1 --memory 1.5
 
 3. **Create Container Groups:**
     - Container groups can be created by defining multiple containers in the same instance during the creation process.
     - Ensure they share the same network and storage resources.
+OR az container create --resource-group MyResourceGroup --name mycontainergroup --image MyACR.azurecr.io/myapp:latest --cpu 1 --memory 1.5 --restart-policy Always
 
 4. **Test Functionality:**
     - Access the container instance using its FQDN or IP address.
     - Ensure the application is running as expected.
-
+OR az container show --resource-group MyResourceGroup --name mycontainer --query instanceView.state
 
