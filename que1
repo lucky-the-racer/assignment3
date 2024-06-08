@@ -1,0 +1,12 @@
+## 1. Compute Resources
+
+### Task:
+Provision and manage compute resources on Azure.
+
+#### Create a Virtual Network
+```sh
+az network vnet create --name MyVNet --resource-group MyResourceGroup --subnet-name MySubnet
+az network vnet subnet create --address-prefix 10.0.1.0/24 --name MySubnet --resource-group MyResourceGroup --vnet-name MyVNet
+#Deploy Virtual Machines within the Virtual Network
+Create a Linux VM
+az vm create --resource-group MyResourceGroup --name MyLinuxVM --image UbuntuLTS --admin-username azureuser --generate-ssh-keys
