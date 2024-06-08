@@ -4,15 +4,25 @@
     - Go to the Azure portal and click on "Create a resource."
     - Search for "App Service Plan" and select it.
     - Fill in the required fields (name, resource group, region, pricing tier).
-    - Click "Review + create," then "Create."
+    - Click "Review + create," then "Create." 
+OR
+now we use terminal and use these commands 
+az appservice plan create --name MyAppServicePlan --resource-group MyResourceGroup --sku FREE
 
 2. **Provision a Web App:**
     - Go to the Azure portal and click on "Create a resource."
     - Search for "Web App" and select it.
     - Fill in the required fields (name, publish, runtime stack, etc.).
     - Choose the App Service Plan you created.
-    - Click "Review + create," then "Create."
+    - Click "Review + create," then "Create." 
+OR
+now we use terminal and use these commands 
+az webapp create --resource-group MyResourceGroup --plan MyAppServicePlan --name MyUniqueAppName
 
 3. **Deploy a Simple Welcome Page:**
     - Use the Azure portal's built-in editor to create a simple HTML file.
-    - Or, deploy your code using GitHub, FTP, or other deployment methods
+    - Or, deploy your code using GitHub, FTP, or other deployment methods 
+OR
+now we use terminal and use these commands  
+az webapp up --name MyUniqueAppName --resource-group MyResourceGroup --html
+
