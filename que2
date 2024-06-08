@@ -3,17 +3,16 @@
 ## 2. Deploy Linux and Windows Virtual Machine (VM) and Access Them
 ### Steps:
 1. **Create a Linux VM:**
-    - Go to the Azure portal and click on "Create a resource."
-    - Select "Virtual Machine."
-    - Choose "Ubuntu Server" for the image.
+    - we go on azure  and click on "Create a resource."
+    - then Select the  "Virtual Machine."
+    - we can choose "Ubuntu Server" for the image.
     - Fill in the required fields (VM name, region, size, etc.).
-    - Under "Administrator account," choose "SSH public key."
-    - Upload your SSH public key.
-    - Click "Review + create," then "Create."
+    -now we need to  choose "SSH public key.",beacasue of adminstrative.
+    - after this we create the machine.
 
 2. **Access the Linux VM using SSH:**
-    - Open your terminal.
-    - Use the command: `ssh username@your_vm_public_ip`
+    -we Open the terminal.
+    - and use cammand for access `ssh username@your_vm_public_ip`
 
 3. **Create a Windows VM:**
     - Go to the Azure portal and click on "Create a resource."
@@ -26,3 +25,9 @@
 4. **Access the Windows VM using RDP:**
     - Download an RDP file from the Azure portal.
     - Open the RDP file and connect using the username and password you set.
+or ssh azureuser@<Linux_VM_IP_Address>
+Access the Windows VM using RDP
+
+1.Open Remote Desktop Connection.
+2.Enter the IP address of the Windows VM.
+3.Connect using your credentials.
