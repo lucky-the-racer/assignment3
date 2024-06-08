@@ -1,0 +1,16 @@
+## 4. Create Azure Container Registry (ACR) and Pull Image from ACR
+### Steps:
+1. **Create ACR:**
+    - Go to the Azure portal and click on "Create a resource."
+    - Search for "Container Registry" and select it.
+    - Fill in the required fields (registry name, resource group, location).
+    - Click "Review + create," then "Create."
+
+2. **Push an Image to ACR:**
+    - Tag your Docker image: `docker tag myimage acrname.azurecr.io/myimage:tag`
+    - Login to ACR: `az acr login --name acrname`
+    - Push the image: `docker push acrname.azurecr.io/myimage:tag`
+
+3. **Pull the Image from ACR:**
+    - Login to ACR from your machine: `docker login acrname.azurecr.io`
+    - Pull the image: `docker pull acrname.azurecr.io/myimage:tag`
