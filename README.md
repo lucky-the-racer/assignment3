@@ -5,7 +5,7 @@
 
 # Azure Infrastructure Setup
 
-## 1. Deploy Linux and Windows Virtual Machine (VM) and Access Them
+## 2. Deploy Linux and Windows Virtual Machine (VM) and Access Them
 ### Steps:
 1. **Create a Linux VM:**
     - Go to the Azure portal and click on "Create a resource."
@@ -31,7 +31,7 @@
 4. **Access the Windows VM using RDP:**
     - Download an RDP file from the Azure portal.
     - Open the RDP file and connect using the username and password you set.
-## 2. Create an App Service Plan and Provision a Web App
+## 3. Create an App Service Plan and Provision a Web App
 ### Steps:
 1. **Create an App Service Plan:**
     - Go to the Azure portal and click on "Create a resource."
@@ -49,7 +49,7 @@
 3. **Deploy a Simple Welcome Page:**
     - Use the Azure portal's built-in editor to create a simple HTML file.
     - Or, deploy your code using GitHub, FTP, or other deployment methods
-## 3. Create Azure Container Registry (ACR) and Pull Image from ACR
+## 4. Create Azure Container Registry (ACR) and Pull Image from ACR
 ### Steps:
 1. **Create ACR:**
     - Go to the Azure portal and click on "Create a resource."
@@ -65,7 +65,7 @@
 3. **Pull the Image from ACR:**
     - Login to ACR from your machine: `docker login acrname.azurecr.io`
     - Pull the image: `docker pull acrname.azurecr.io/myimage:tag`
-## 4. Create Container Instance and Deploy a Docker Application
+## 5. Create Container Instance and Deploy a Docker Application
 ### Steps:
 1. **Create a Container Instance:**
     - Go to the Azure portal and click on "Create a resource."
@@ -84,4 +84,8 @@
 4. **Test Functionality:**
     - Access the container instance using its FQDN or IP address.
     - Ensure the application is running as expected.
-         
+
+
+
+
+   
