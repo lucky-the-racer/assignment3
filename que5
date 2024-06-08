@@ -1,0 +1,21 @@
+## 5. Create Container Instance and Deploy a Docker Application
+### Steps:
+1. **Create a Container Instance:**
+    - Go to the Azure portal and click on "Create a resource."
+    - Search for "Container Instances" and select it.
+    - Fill in the required fields (name, resource group, container image, etc.).
+    - Click "Review + create," then "Create."
+
+2. **Deploy a Simple Docker Application:**
+    - Use a public Docker image or your image from ACR.
+    - Specify the image and settings during the creation of the container instance.
+
+3. **Create Container Groups:**
+    - Container groups can be created by defining multiple containers in the same instance during the creation process.
+    - Ensure they share the same network and storage resources.
+
+4. **Test Functionality:**
+    - Access the container instance using its FQDN or IP address.
+    - Ensure the application is running as expected.
+
+
