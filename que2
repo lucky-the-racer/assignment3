@@ -1,0 +1,28 @@
+# Azure Infrastructure Setup
+
+## 2. Deploy Linux and Windows Virtual Machine (VM) and Access Them
+### Steps:
+1. **Create a Linux VM:**
+    - Go to the Azure portal and click on "Create a resource."
+    - Select "Virtual Machine."
+    - Choose "Ubuntu Server" for the image.
+    - Fill in the required fields (VM name, region, size, etc.).
+    - Under "Administrator account," choose "SSH public key."
+    - Upload your SSH public key.
+    - Click "Review + create," then "Create."
+
+2. **Access the Linux VM using SSH:**
+    - Open your terminal.
+    - Use the command: `ssh username@your_vm_public_ip`
+
+3. **Create a Windows VM:**
+    - Go to the Azure portal and click on "Create a resource."
+    - Select "Virtual Machine."
+    - Choose "Windows Server" for the image.
+    - Fill in the required fields (VM name, region, size, etc.).
+    - Under "Administrator account," set a username and password.
+    - Click "Review + create," then "Create."
+
+4. **Access the Windows VM using RDP:**
+    - Download an RDP file from the Azure portal.
+    - Open the RDP file and connect using the username and password you set.
